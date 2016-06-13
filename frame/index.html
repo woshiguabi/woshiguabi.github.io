@@ -23,13 +23,9 @@
 	<iframe src="http://119.29.78.29/index.php" id="iframe" frameborder="0"></iframe>
 	<script>
 	window.self.onhashchange = function(){
-		if(window.self.location.hash == "#chat"){
-			document.getElementById('iframe').src = "http://119.29.78.29/chat";
-		}
+		document.getElementById('iframe').src = "http://119.29.78.29"+window.self.location.hash.split(1);
 	}
-	if(window.self.location.hash == "#chat"){
-		document.getElementById('iframe').src = "http://119.29.78.29/chat";
-	}
+	document.getElementById('iframe').src = "http://119.29.78.29"+window.self.location.hash.split(1);
 	</script>
 </body>
 </html>
