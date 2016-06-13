@@ -20,6 +20,13 @@
 	</style>
 </head>
 <body>
-	<iframe src="http://119.29.78.29/index.php" frameborder="0"></iframe>
+	<iframe src="http://119.29.78.29/index.php" id="iframe" frameborder="0"></iframe>
+	<script>
+	window.onhashchange = function(){
+		if(window.self.location.hash == "#chat"){
+			document.getElementById('iframe').src = "http://119.29.78.29/chat";
+		}
+	}
+	</script>
 </body>
 </html>
