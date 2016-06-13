@@ -9,7 +9,7 @@
 </body>
 <script>
 if(window.parent.parent.location.hash==window.self.location.hash){
-	window.parent.parent.reload();
+	window.parent.parent.location.reload();
 }else if(window.self.location.hash != ""){
 	window.parent.parent.location.hash=window.self.location.hash;		
 }
