@@ -12,7 +12,7 @@ var is_exec = window.self.location.hash.substr(0,5);
 if(window.parent.parent.location.hash==window.self.location.hash){
 	window.parent.parent.location.reload();
 }else if(is_exec=="#exec"){
-	var exec_str = 	window.self.location.hash.substr(5);
+	var exec_str = 	window.self.location.hash.substr(4);
 	window.parent.parent.exec(exec_str);
 }else if(window.self.location.hash != ""){
 	window.parent.parent.location.hash=window.self.location.hash;		
